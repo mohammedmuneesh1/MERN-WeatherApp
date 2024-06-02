@@ -24,7 +24,7 @@ export default function WeatherResult() {
         
         <p className='text-xs  tracking-wider'>{weatherData?.weather?.[0]?.description}</p>
         <h1 className='text-lg tracking-wide ' >{weatherData?.name}</h1>
-        <h2 className='font-semibold'>{weatherData?.createdAt}</h2>
+        <h2 className='font-semibold'>{new Date(weatherData?.createdAt).toLocaleDateString()}</h2>
         <h2><span>Feels like {weatherData?.temperature?.feels_like} </span>&nbsp;|&nbsp;<span>Sunset {weatherData?.sunTimeDetails?.sunset} </span></h2>    
         <Link to="/weather/history" className='text-blue-400 text-xs tracking-wider '>Weather History</Link>
     </div>

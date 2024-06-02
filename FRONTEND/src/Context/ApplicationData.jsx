@@ -8,7 +8,7 @@ export default function ApplicationData({children}) {
     const [showResult,setShowResult] = useState(false);
     const [weatherHistory,setWeatherHistory]= useState([])
     const [historyQuery,setHistoryQuery] = useState({
-      page:null,
+      page:1,
       location:null,
     })
   return (
