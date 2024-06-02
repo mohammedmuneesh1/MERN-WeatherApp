@@ -54,7 +54,7 @@ export default function WeatherHistoryPage() {
     }
 
   return (
-    <div className='max-w-screen min-h-screen bg-gray-50'>
+    <div className='max-w-screen min-h-screen bg-gray-500'>
      <section className="  p-3 sm:p-5">
     <div className="mx-auto max-w-screen-xl px-4 lg:px-12">
         <div className="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
